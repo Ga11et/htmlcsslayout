@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Первый шаг</title>
+	<link rel="stylesheet" type="text/css" href="firststep.css">
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/eurodo.png"></a>
+		<div class="headermenu">
+			<div><p>Акции</p></div>
+			<div><p>Домены</p></div>
+			<div><p>email@of-accaunt.com</p></div>
+			<div><p>Выход</p></div>	
+		</div>
+	</header>
+	<main>
+		<section class="steps">
+			<div class="stepactive">
+				<div class="circle"><label>1</label></div>
+				<div>
+					<p class="numberofstep">Шаг 1</p>
+					<p class="nameofstep">Товары, подарки</p>
+				</div>
+			</div>
+			<div class="line">
+				<div></div>
+			</div>
+			<div>
+				<div class="circle"><label>2</label></div>
+				<div>
+					<p class="numberofstep">Шаг 2</p>
+					<p class="nameofstep">Вариации, если есть</p>
+				</div>
+			</div>
+			<div class="line">
+				<div></div>
+			</div>
+			<div>
+				<div class="circle"><label>3</label></div>
+				<div>
+					<p class="numberofstep">Шаг 3</p>
+					<p class="nameofstep">Вкладыш</p>
+				</div>
+			</div>
+			<div class="line">
+				<div></div>
+			</div>
+			<div>
+				<div class="circle"><label>4</label></div>
+				<div>
+					<p class="numberofstep">Шаг 4</p>
+					<p class="nameofstep">Дизайн сайта</p>
+				</div>
+			</div>
+		</section>
+		<form action="" method="">
+			<section class="choosedomain">
+				<h2>Выбор домена и ссылки для сайта акции</h2>
+				<select class="" onchange="className='selected'">
+					<option>Домен</option>
+					<option>.RU</option>
+					<option>.COM</option>
+					<option>.NET</option>
+					<option>.BIZ</option>
+				</select>
+				<p>Ссылка для акции https://domain.com/ссылка/</p>
+				<input type="url" name="urlstock" class="domainstock" placeholder="https://domain.com/ссылка/">
+			</section>
+			<section class="products">
+				<h2>Товары</h2>
+				<div class="allproducts">
+					<div class="firstpoduct">
+						<p class="firstnumber">Название товара для отзыва</p>
+						<input type="text" placeholder="Название товара">
+						<div class="pruductthings">
+							<div>
+								<p>ASIN</p>
+								<input type="number" placeholder="ASIN">
+							</div>
+							<div>
+								<p>URL картинки</p>
+								<input type="url" placeholder="http://">
+							</div>
+							<div>
+									<p>Вариация?</p>
+								<label>
+									<input type="checkbox">
+									Да
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="productpreview">
+						<p>Предпросмотр товара</p>
+						<img src="../img/greyrect.jpg">
+					</div>
+					<div class="secondproduct">
+						<p class="secondnumber">Название товара для отзыва</p>
+						<input type="text" placeholder="Название товара">
+						<div class="pruductthings">
+							<div>
+								<p>ASIN</p>
+								<input type="number" placeholder="ASIN">
+							</div>
+							<div>
+								<p>URL картинки</p>
+								<input type="url" placeholder="http://">
+							</div>
+							<div>
+								<p>Вариация?</p>
+								<label>
+									<input type="checkbox">
+									Да
+								</label>
+								<img src="../img/delete.svg">
+							</div>
+						</div>
+					</div>
+					<div class="productpreview">
+						<p>Предпросмотр товара</p>
+						<img src="../img/greyrect.jpg">
+					</div>
+				</div>
+				<button>
+					<img src="../img/plusblack.svg">
+					<label>Добавить товар</label>
+				</button>
+			</section>
+			<section class="products gifts">
+				<h2>Подарки</h2>
+				<div class="allproducts">
+					<div class="firstpoduct">
+						<p class="firstnumber">Название подарка</p>
+						<input type="text" placeholder="Название подарка">
+						<div class="pruductthings">
+							<div>
+								<p>ASIN подарка, если есть</p>
+								<input type="number" placeholder="ASIN подарка">
+							</div>
+							<div>
+								<p>URL картинки</p>
+								<input type="url" placeholder="http://">
+							</div>
+							<div>
+									<p>Вариация?</p>
+								<label>
+									<input type="checkbox">
+									Да
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="productpreview">
+						<p>Предпросмотр подарка</p>
+						<img src="../img/greyrect.jpg">
+					</div>
+					<div class="secondproduct">
+						<p class="secondnumber">Название подарка</p>
+						<input type="text" placeholder="Название подарка">
+						<div class="pruductthings">
+							<div>
+								<p>ASIN подарка, если есть</p>
+								<input type="number" placeholder="ASIN подарка">
+							</div>
+							<div>
+								<p>URL картинки</p>
+								<input type="url" placeholder="http://">
+							</div>
+							<div>
+								<p>Вариация?</p>
+								<label>
+									<input type="checkbox">
+									Да
+								</label>
+								<img src="../img/delete.svg">
+							</div>
+						</div>
+					</div>
+					<div class="productpreview">
+						<p>Предпросмотр подарка</p>
+						<img src="../img/greyrect.jpg">
+					</div>
+				</div>
+				<button>
+					<img src="../img/plusblack.svg">
+					<label>Добавить подарок</label>
+				</button>
+			</section>
+			<section class="next">
+				<p>Почта для уведомлений</p>
+				<input type="email" placeholder="example@email.com">
+				<p>Маркетплейс</p>
+				<select onchange="className='selected'">
+					<option>Маркетплейсы</option>
+					<option>WildBerries</option>
+					<option>Ozon</option>
+					<option>Яндекс Маркет</option>
+					<option>СберМегаМаркет</option>
+					<option>Aliexpress</option>
+				</select>
+				<br>
+				<a href="secondstep.html">Следующий шаг</a>
+			</section>
+		</form>
+		
+	</main>
+	
+
+</body>
+</html>

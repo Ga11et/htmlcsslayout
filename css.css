@@ -1,0 +1,214 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('fonts/avenirnextcyr-regular.eot'); 
+	src: url('fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), 
+		url('fonts/avenirnextcyr-regular.woff2') format('woff2'), 
+		url('fonts/avenirnextcyr-regular.woff') format('woff'), 
+		url('fonts/avenirnextcyr-regular.ttf') format('truetype'), 
+		url('fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); 
+}
+
+:root{
+	--black: rgba(0, 0, 0, 0.85);
+	--gray: rgba(0, 0, 0, 0.45);
+	--gray2: rgba(0, 0, 0, 0.25);
+	--supergray: #F0F0F0;
+	--graytable: #FAFAFA;
+	--graystroke: #D9D9D9;
+	--blue:  #1890FF;
+	--bluehover: #40A9FF;
+	--green:  #52C41A;
+	--red: #FF4D4F;
+	--redhover: #FF7875;
+	--redmistakestorke: #FFCCC7;
+	--redmistakebg: #FFF2F0;
+	--fon: #fff;
+	font-family: 'AvenirNextCyr', sans;
+	font-weight: 400;
+	font-size: 14px;
+	font-variant: normal;
+	color: var(--black);
+}
+
+a{
+	text-decoration: none;
+}
+a: visited{
+	text-decoration: none;
+}
+
+body{
+	width: 1200px;
+	margin: 0px auto;
+	background: var(--fon);
+}
+
+/***********************************************************************************************
+****************************     HEADER     ****************************************************
+***********************************************************************************************/
+
+header{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
+}
+header a{
+	height: 80%;
+}
+header a img{
+	margin-left: 39px;
+	height: 100%;
+}
+header .headermenu{
+	display: flex;
+	position: absolute;
+	right: 72px;
+	height: 60px;
+}
+header > div > div{
+	display: flex;
+	margin: 0px 12px;
+	padding: auto 0px;
+	align-items: center;
+	cursor: pointer;
+	border-top: 2px solid var(--fon);
+	transition: .3s;
+}
+header .headermenu div:hover{
+	color: var(--bluehover);
+	border-top: 2px solid var(--bluehover);
+}
+header > div .active{
+	color: var(--blue);
+	border-top: 2px solid var(--blue);
+}
+header > div > div > p{
+	margin: auto 0px;
+}
+
+/***********************************************************************************************
+****************************     ADDSTOCK     **************************************************
+***********************************************************************************************/
+
+.addstock a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--blue);
+	height: 32px;
+	width: 189px;
+	border-radius: 40px;
+	margin: 54px 0px 36px 15px;
+	transition: .3s;
+}
+.addstock a:hover{
+	background: var(--bluehover);
+}
+.addstock a:active{
+	background: var(--blue);
+}
+.addstock a img{
+	width: 14px;
+	margin-right: 8px;
+}
+.addstock a label{
+	font-size: 16px;
+	color: var(--fon);
+	font-variant: initial;
+	cursor: inherit;
+}
+
+/***********************************************************************************************
+****************************     DOMAINS     ***************************************************
+***********************************************************************************************/
+
+.domains{
+	font-weight: 400;
+	margin-left: 12px;
+	display: grid;
+	grid-template-columns: 182px 94px 128px 251px 121px 144px 253px;
+	grid-template-rows: 56px 40px 40px;
+	grid-gap: 16px 0px;
+}
+.domains div{
+	border-bottom: 1px solid var(--supergray);
+}
+.domains div label{
+	display: block;
+	margin-top: 7px;
+}
+.domains .firstrow{
+	font-weight: 600;
+	background: var(--graytable);
+}
+.domains .firstrow label{
+	margin-top: 20px;
+}
+.domains .domainfirst label{
+	margin-left: 18px;
+}
+.domains .link label{
+	margin-left: 13px;
+	color: var(--blue);
+	transition: .3s;
+}
+.domains .link label:hover{
+	color: var(--bluehover);
+	cursor: pointer;
+}
+.domains .link label:active{
+	color: var(--blue);
+}
+.domains div img{
+	margin-right: 5px;
+	margin-top: 7px;
+}
+.domains .buttons{
+	display: flex;
+}
+.domains .buttons a{
+	width: 79px;
+	height: 25px;
+	border-radius: 2px;
+	transition: .3s;
+}
+.domains .buttons a label{
+	margin-top: 4px;
+	cursor: inherit;
+	text-align: center;
+}
+.domains .buttons .edit{
+	background: var(--blue);
+	color: var(--fon);
+	margin-right: 5px;
+}
+.domains .buttons .edit:hover{
+	background: var(--bluehover);
+}
+.domains .buttons .edit:active{
+	background: var(--blue);
+}
+.domains .buttons .delete{
+	color: var(--fon);
+	background: var(--red);
+	margin-right: 5px;
+}
+.domains .buttons .delete:hover{
+	background: var(--redhover);
+}
+.domains .buttons .delete:active{
+	background: var(--red);
+}
+.domains .buttons .reports{
+	background: var(--fon);
+	border: 1px dashed var(--graystroke);
+	color: var(--black);
+}
+.domains .buttons .reports:hover{
+	background: var(--graytable);
+}
+.domains .buttons .reports:active{
+	background: var(--fon);
+}

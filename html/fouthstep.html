@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Четвертый шаг</title>
+	<link rel="stylesheet" type="text/css" href="fouthstep.css">
+</head>
+<body>
+	<script>
+		function link() {
+			let checkbox = document.getElementById('b1')
+			let linktolang = document.getElementById('linktolang')
+			if (checkbox.checked) linktolang.href = "firststeplang.html"
+				else linktolang.href = "firststep.html"
+		}
+
+	</script>
+	<!-- Header -->
+	<header>
+		<a href="../index.html"><img src="../img/eurodo.png"></a>
+		<div class="headermenu">
+			<div><p>Акции</p></div>
+			<div><p>Домены</p></div>
+			<div><p>email@of-accaunt.com</p></div>
+			<div><p>Выход</p></div>	
+		</div>
+	</header>
+	<!-- Steps -->
+	<section class="steps">
+		<div class="stepdone">
+			<div class="circle"><label>1</label></div>
+			<div>
+				<p class="numberofstep">Шаг 1</p>
+				<p class="nameofstep">Товары, подарки</p>
+			</div>
+		</div>
+		<div class="line lineblue">
+			<div></div>
+		</div>
+		<div class="stepdone">
+			<div class="circle"><label>2</label></div>
+			<div>
+				<p class="numberofstep">Шаг 2</p>
+				<p class="nameofstep">Вариации, если есть</p>
+			</div>
+		</div>
+		<div class="line lineblue">
+			<div></div>
+		</div>
+		<div class="stepdone">
+			<div class="circle"><label>3</label></div>
+			<div>
+				<p class="numberofstep">Шаг 3</p>
+				<p class="nameofstep">Вкладыш</p>
+			</div>
+		</div>
+		<div class="line lineblue">
+			<div></div>
+		</div>
+		<div class="stepactive">
+			<div class="circle"><label>4</label></div>
+			<div>
+				<p class="numberofstep">Шаг 4</p>
+				<p class="nameofstep">Дизайн сайта</p>
+			</div>
+		</div>
+	</section>
+	<!-- Design -->
+	<section class="design">
+		<div class="choose">
+			<h2>Выберите дизайн сайта</h2>
+			<div class="pictures">
+				<label for="p1"><img src="../img/fouth.jpg"><input type="radio" name="radio" id="p1"><img src="../img/chosen.svg"></label>
+				<label for="p2"><img src="../img/fouth.jpg"><input type="radio" name="radio" id="p2"><img src="../img/chosen.svg"></label>
+				<label for="p3"><img src="../img/fouth.jpg"><input type="radio" name="radio" id="p3"><img src="../img/chosen.svg"></label>
+				<label for="p4"><img src="../img/fouth.jpg"><input type="radio" name="radio" id="p4"><img src="../img/chosen.svg"></label>
+			</div>
+		</div>
+		<div class="preview">
+			<h2>Просмотр дизайна</h2>
+			<img src="../img/preview.jpg">
+			<a onclick="link()" id="linktolang">Создать страницу</a>
+			<div class="check__box">
+				<input type="checkbox" id="b1">
+				<label for="b1">Добавить дополнительный язык для названий товаров и подарков</label>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

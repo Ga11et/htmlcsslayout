@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/avenirnextcyr-regular.eot'); 
+	src: url('../fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/avenirnextcyr-regular.woff2') format('woff2'), 
+		url('../fonts/avenirnextcyr-regular.woff') format('woff'), 
+		url('../fonts/avenirnextcyr-regular.ttf') format('truetype'), 
+		url('../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); 
+}
+
+:root{
+	--black: rgba(0, 0, 0, 0.85);
+	--grey: rgba(0, 0, 0, 0.45);
+	--grey2: rgba(0, 0, 0, 0.25);
+	--supergrey: #F0F0F0;
+	--greytable: #FAFAFA;
+	--greystroke: #D9D9D9;
+	--greyextra: #F0F0F0;
+	--blue:  #1890FF;
+	--bluehover: #40A9FF;
+	--green:  #52C41A;
+	--red: #FF4D4F;
+	--redhover: #FF7875;
+	--redmistakestorke: #FFCCC7;
+	--redmistakebg: #FFF2F0;
+	--fon: #fff;
+	--fontfam: 'AvenirNextCyr', sans;
+	font-family: var(--fontfam);
+	font-weight: 400;
+	font-size: 14px;
+	font-variant: normal;
+	color: var(--black);
+}
+
+body{
+	width: 1200px;
+	margin: 0px auto;
+	background: var(--fon);
+}
+
+/***********************************************************************************************
+****************************     HEADER     ****************************************************
+***********************************************************************************************/
+
+header{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
+}
+header a{
+	height: 80%;
+}
+header a img{
+	margin-left: 39px;
+	height: 100%;
+}
+header .headermenu{
+	display: flex;
+	position: absolute;
+	right: 72px;
+	height: 60px;
+}
+header > div > div{
+	display: flex;
+	margin: 0px 12px;
+	padding: auto 0px;
+	align-items: center;
+	cursor: pointer;
+	border-top: 2px solid var(--fon);
+	transition: .3s;
+}
+header .headermenu div:hover{
+	color: var(--bluehover);
+	border-top: 2px solid var(--bluehover);
+}
+header > div .active{
+	color: var(--blue);
+	border-top: 2px solid var(--blue);
+}
+header > div > div > p{
+	margin: auto 0px;
+}
+
+/***********************************************************************************************
+****************************     GOBACK     ****************************************************
+***********************************************************************************************/
+
+.goback{
+	display: grid;
+	grid-template-columns: 129px 369px 67px 67px 67px 69px 1fr;
+	margin: 54px 0px 35px 0px;
+	transition: .3s;
+}
+.goback .arrow img{
+	position: relative;
+    left: 84px;
+    top: 4px;
+}
+.goback .link a{
+	color: var(--blue);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+.goback .link p{
+	font-size: 12px;
+}
+.goback .table{
+	border-left: 1px solid var(--greyextra);
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.goback .firstt{
+	border: 0px;
+	padding-left: 24px;
+}
+.goback .table .head{
+	font-size: 12px;
+}
+.goback .table p:not([class="head"]){
+	font-size: 16px;
+}
+
+/***********************************************************************************************
+****************************     TABLE     *****************************************************
+***********************************************************************************************/
+
+.actandarch{
+	display: grid;
+	grid-template-columns: 123px 100px;
+	margin: 0px 0px 40px 25px;
+	color: var(--grey);
+}
+.actandarch div p{
+	cursor: pointer;
+	display: inline-block;
+}
+.actandarch .active{
+	color: var(--blue);
+	cursor: default;
+	font-weight: 600;
+}
+.maintablehead{
+	background-color: var(--greytable);
+	height: 50px;
+	display: grid;
+	grid-template-columns: 137px 184px 253px 208px 353px 1fr;
+	font-weight: 600;
+}
+.maintablehead .firstmt{
+	padding-left: 25px;
+}
+.maintablepart{
+	display: grid;
+	grid-template-columns: 122px 184px 253px 208px 353px 1fr;
+	line-height: 24px;
+	margin: 24px 0px 0px 15px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid var(--greyextra);
+}
+.maintablepart p{
+	margin: 0px;
+	padding-right: 36px;
+}
+.maintablepart .firstmpt{
+	padding-left: 10px;
+}
+.lasttablepart{
+	border: 0px;
+	margin-bottom: 100px;
+}
+.nodisplay{
+	display: none;
+}

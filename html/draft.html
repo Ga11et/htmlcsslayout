@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Черновик</title>
+	<link rel="stylesheet" type="text/css" href="draft.css">
+</head>
+<body>
+	<script>
+		function archive() {
+			let arch = document.getElementById('archive')
+			let act = document.getElementById('active')
+			let tableact = [document.getElementById('mainpartact1'),document.getElementById('mainpartact2'),document.getElementById('mainpartact3')]
+			let tablearch = [document.getElementById('mainpartarch1'),document.getElementById('mainpartarch2'),document.getElementById('mainpartarch3')]
+			if (arch.classList != "active"){
+				arch.classList.toggle('active')
+				act.classList.toggle('active')
+				tableact.forEach(function(item, i, arr){
+					item.classList.toggle('nodisplay')
+				})
+				tablearch.forEach(function(item, i, arr){
+					item.classList.toggle('nodisplay')
+				})
+			}	
+		}
+		function active() {
+			let arch = document.getElementById('archive')
+			let act = document.getElementById('active')
+			let tableact = [document.getElementById('mainpartact1'),document.getElementById('mainpartact2'),document.getElementById('mainpartact3')]
+			let tablearch = [document.getElementById('mainpartarch1'),document.getElementById('mainpartarch2'),document.getElementById('mainpartarch3')]
+			if (act.classList != "active"){
+				arch.classList.toggle('active')
+				act.classList.toggle('active')
+				tableact.forEach(function(item, i, arr){
+					item.classList.toggle('nodisplay')
+				})
+				tablearch.forEach(function(item, i, arr){
+					item.classList.toggle('nodisplay')
+				})
+			}	
+		}
+	</script>
+	<!-- Header -->
+	<header id="begin">
+		<a href="../index.html"><img src="../img/eurodo.png"></a>
+		<div class="headermenu">
+			<div><p>Акции</p></div>
+			<div><p>Домены</p></div>
+			<div><p>email@of-accaunt.com</p></div>
+			<div><p>Выход</p></div>	
+		</div>
+	</header>
+	<!-- Goback -->
+	<section class="goback">
+		<div class="arrow">
+			<img src="../img/arrow.svg">
+		</div>
+		<div class="link">
+			<a href="firststeplang.html">eurodofreeitem.com/opinion</a>
+			<p>Статус: Черновик</p>
+		</div>
+		<div class="table firstt">
+			<p class="head">Язык</p>
+			<p>Все</p>
+		</div>
+		<div class="table">
+			<p class="head">Заходы</p>
+			<p>4565</p>
+		</div>
+		<div class="table">
+			<p class="head">Формы</p>
+			<p>34</p>
+		</div>
+		<div class="table">
+			<p class="head">Отзывы</p>
+			<p>5</p>
+		</div>
+		<div class="table">
+			<p class="head">CV</p>
+			<p>0,10%</p>
+		</div>
+	</section>
+	<!-- active and archive -->
+	<section class="actandarch">
+		<div onclick="active()">
+			<p class="active" id="active">Активные (<span>2</span>)</p>
+		</div>
+		<div onclick="archive()">
+			<p id="archive">Архив (<span>2</span>)</p>
+		</div>
+	</section>
+	<!-- Table Active -->
+	<section class="maintablehead">
+		<p class="firstmt">Дата и время</p>
+		<p>Номер заказа</p>
+		<p>Имя, контакты, адрес</p>
+		<p>Подарок, товар</p>
+		<p>Оценка, отзыв</p>
+		<p>В архив</p>
+	</section>
+	<section class="maintablepart" id="mainpartact1">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Obar Rado Abraham-Ruiz</p>
+			<p>645349834</p>
+			<p>email@gmail.com</p>
+			<br>
+			<p>Spain</p>
+			<p>Barcelona</p>
+			<p>Montgat</p>
+			<p>08390</p>
+			<p>Carrer Pau Alsina 10 Bis, principal</p>
+		</div>
+		<div>
+			<p>Taza con Pajita y Cuchara</p>
+			<p>Black</p>
+			<p>B07Y5H0WYW</p>
+			<br>
+			<p>Microsoft Surface Laptop 3</p>
+			<p>13 Inch</p>
+			<p>B07Y5H8WYW</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<p>Текст отзыва, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст</p>
+		</div>
+		<div>
+			<img src="../img/archive.svg">
+		</div>
+	</section>
+	<section class="maintablepart" id="mainpartact2">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Имя</p>
+			<p>Телефон</p>
+			<p>Электронная почта</p>
+			<br>
+			<p>Страна</p>
+			<p>Штат/провинция</p>
+			<p>Город</p>
+			<p>Индекс</p>
+			<p>Адрес</p>
+		</div>
+		<div>
+			<p>Имя подарка</p>
+			<p>Вариация подарка</p>
+			<p>ASIN подарка</p>
+			<br>
+			<p>Имя товара</p>
+			<p>Вариация товара</p>
+			<p>ASIN товара</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<a href="">Ссылка на отзыв</a>
+		</div>
+		<div>
+			<img src="../img/archive.svg">
+		</div>
+	</section>
+	<section class="maintablepart lasttablepart" id="mainpartact3">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Obar Rado Abraham-Ruiz</p>
+			<p>645349834</p>
+			<p>email@gmail.com</p>
+			<br>
+			<p>Spain</p>
+			<p>Barcelona</p>
+			<p>Montgat</p>
+			<p>08390</p>
+			<p>Carrer Pau Alsina 10 Bis, principal</p>
+		</div>
+		<div>
+			<p>Taza con Pajita y Cuchara</p>
+			<p>Black</p>
+			<p>B07Y5H0WYW</p>
+			<br>
+			<p>Microsoft Surface Laptop 3</p>
+			<p>13 Inch</p>
+			<p>B07Y5H8WYW</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<p>Текст отзыва, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст</p>
+		</div>
+		<div>
+			<img src="../img/archive.svg">
+		</div>
+	</section>
+	<!-- Table Archive -->
+	<section class="maintablepart nodisplay" id="mainpartarch1">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Obar Rado Abraham-Ruiz</p>
+			<p>645349834</p>
+			<p>email@gmail.com</p>
+			<br>
+			<p>Spain</p>
+			<p>Barcelona</p>
+			<p>Montgat</p>
+			<p>08390</p>
+			<p>Carrer Pau Alsina 10 Bis, principal</p>
+		</div>
+		<div>
+			<p>Taza con Pajita y Cuchara</p>
+			<p>Black</p>
+			<p>B07Y5H0WYW</p>
+			<br>
+			<p>Microsoft Surface Laptop 3</p>
+			<p>13 Inch</p>
+			<p>B07Y5H8WYW</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<p>Текст отзыва, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст</p>
+		</div>
+		<div>
+			<p>Да</p>
+		</div>
+	</section>
+	<section class="maintablepart nodisplay" id="mainpartarch2">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Имя</p>
+			<p>Телефон</p>
+			<p>Электронная почта</p>
+			<br>
+			<p>Страна</p>
+			<p>Штат/провинция</p>
+			<p>Город</p>
+			<p>Индекс</p>
+			<p>Адрес</p>
+		</div>
+		<div>
+			<p>Имя подарка</p>
+			<p>Вариация подарка</p>
+			<p>ASIN подарка</p>
+			<br>
+			<p>Имя товара</p>
+			<p>Вариация товара</p>
+			<p>ASIN товара</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<a href="">Ссылка на отзыв</a>
+		</div>
+		<div>
+			<p>Да</p>
+		</div>
+	</section>
+	<section class="maintablepart nodisplay lasttablepart" id="mainpartarch3">
+		<div class="firstmpt">
+			<p>03.04.2021</p>
+			<br>
+			<p>21:05 +7</p>
+		</div>
+		<div>
+			<p>405-9168193-5746708</p>
+		</div>
+		<div>
+			<p>Obar Rado Abraham-Ruiz</p>
+			<p>645349834</p>
+			<p>email@gmail.com</p>
+			<br>
+			<p>Spain</p>
+			<p>Barcelona</p>
+			<p>Montgat</p>
+			<p>08390</p>
+			<p>Carrer Pau Alsina 10 Bis, principal</p>
+		</div>
+		<div>
+			<p>Taza con Pajita y Cuchara</p>
+			<p>Black</p>
+			<p>B07Y5H0WYW</p>
+			<br>
+			<p>Microsoft Surface Laptop 3</p>
+			<p>13 Inch</p>
+			<p>B07Y5H8WYW</p>
+		</div>
+		<div>
+			<p>3</p>
+			<br>
+			<p>Текст отзыва, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст, отзыва текст</p>
+		</div>
+		<div>
+			<p>Да</p>
+		</div>
+	</section>
+</body>
+</html>

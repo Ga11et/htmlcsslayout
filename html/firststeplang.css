@@ -1,0 +1,290 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/avenirnextcyr-regular.eot'); 
+	src: url('../fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/avenirnextcyr-regular.woff2') format('woff2'), 
+		url('../fonts/avenirnextcyr-regular.woff') format('woff'), 
+		url('../fonts/avenirnextcyr-regular.ttf') format('truetype'), 
+		url('../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); 
+}
+
+:root{
+	--black: rgba(0, 0, 0, 0.85);
+	--grey: rgba(0, 0, 0, 0.45);
+	--grey2: rgba(0, 0, 0, 0.25);
+	--supergrey: #F0F0F0;
+	--greytable: #FAFAFA;
+	--greystroke: #D9D9D9;
+	--greyextra: #F0F0F0;
+	--blue:  #1890FF;
+	--bluehover: #40A9FF;
+	--green:  #52C41A;
+	--red: #FF4D4F;
+	--redhover: #FF7875;
+	--redmistakestorke: #FFCCC7;
+	--redmistakebg: #FFF2F0;
+	--fon: #fff;
+	--fontfam: 'AvenirNextCyr', sans;
+	font-family: var(--fontfam);
+	font-weight: 400;
+	font-size: 14px;
+	font-variant: normal;
+	color: var(--black);
+}
+
+body{
+	width: 1200px;
+	margin: 0px auto;
+	background: var(--fon);
+}
+
+main{
+	margin-left: 87px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+a{
+	text-decoration: none;
+}
+a: visited{
+	text-decoration: none;
+}
+p{
+	margin: 0px;
+}
+
+::placeholder{
+	color: var(--grey2);
+	opacity: 1;
+}
+::-ms-input-placeholder{
+	color: var(--grey2);
+}
+:-ms-input-placeholder{
+	color: var(--grey2);
+}
+input{
+	outline: none;
+	font-size: 16px;
+}
+
+
+/***********************************************************************************************
+****************************     HEADER     ****************************************************
+***********************************************************************************************/
+
+header{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
+}
+header a{
+	height: 80%;
+}
+header a img{
+	margin-left: 39px;
+	height: 100%;
+}
+header .headermenu{
+	display: flex;
+	position: absolute;
+	right: 72px;
+	height: 60px;
+}
+header > div > div{
+	display: flex;
+	margin: 0px 12px;
+	padding: auto 0px;
+	align-items: center;
+	cursor: pointer;
+	border-top: 2px solid var(--fon);
+	transition: .3s;
+}
+header .headermenu div:hover{
+	color: var(--bluehover);
+	border-top: 2px solid var(--bluehover);
+}
+header > div .active{
+	color: var(--blue);
+	border-top: 2px solid var(--blue);
+}
+header > div > div > p{
+	margin: auto 0px;
+}
+
+/***********************************************************************************************
+****************************     STEPS     *****************************************************
+***********************************************************************************************/
+
+.steps{
+	margin: 54px 180px 35px 87px;
+	display: grid;
+	grid-template-columns: 154px 80px 180px 80px 103px 80px 133px;
+	grid-gap: 16px;
+	grid-template-rows: 1fr;
+	height: 51px;
+	transition: .3s;
+}
+.steps > div{
+	display: flex;
+	position: relative;
+}
+.steps > div .numberofstep{
+	font-size: 16px;
+	margin-top: 8px;
+	color: var(--grey);
+}
+.steps > div .nameofstep{
+	position: absolute;
+	bottom: 0px;
+	color: var(--grey);
+	font-size: 13.5px;
+}
+.steps .line div{
+	width: 80px;
+	height: 17px;
+	border-bottom: 1px solid var(--greyextra);
+}
+.steps div .circle{
+	height: 31px;
+	width: 31px;
+	border-radius: 20px;
+	border: 1px solid var(--grey2);
+	margin-right: 8px;
+}
+.steps div .circle label{
+	display: block;
+	padding-top: 7px;
+	text-align: center;
+	color: var(--grey2);
+}
+
+/**********     STEPACTIVE     **************************/
+
+.steps .stepactive div p{
+	color: var(--black);
+}
+.steps .stepactive .circle{
+	background: var(--blue);
+	border-color: var(--blue);
+}
+.steps .stepactive .circle label{
+	color: var(--fon);
+}
+.steps .lineblue div{
+	border-color: var(--blue);
+}
+
+/**********     STEPDONE     ****************************/
+
+.steps .stepdone .numberofstep{
+	color: var(--black);
+}
+.steps .stepdone .circle{
+	border-color: var(--blue);
+	background-image: url(../img/checkmark.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.steps .stepdone .circle label{
+	color: transparent;
+}
+
+/***********************************************************************************************
+****************************     CONTENT     ***************************************************
+***********************************************************************************************/
+
+.content{
+	margin-left: 81px;
+}
+.content h2{
+	margin-bottom: 36px;
+}
+.content input[type="text"]:focus{
+	border-color: var(--blue);
+}
+.content .onelang .first:before{
+	content: "1";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .second:before{
+	content: "2";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .third:before{
+	content: "3";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .fouth:before{
+	content: "4";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .fifth:before{
+	content: "5";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .sixth:before{
+	content: "6";
+	font-size: 24px;
+	font-weight: 450;
+	margin-right: 15px;
+}
+.content .onelang .name{
+	margin: 12px 10px 24px 29px;
+	width: 300px;
+	height: 28px;
+	border: 1px solid var(--greystroke);
+	outline: none;
+	padding-left: 13px;
+	color: var(--black);
+}
+.content .onelang p:not([class="first"]){
+	margin-left: 29px;
+}
+.content .onelang p span{
+	color: var(--blue);
+}
+.content .onelang p span:hover{
+	cursor: pointer;
+	color: var(--bluehover);
+	text-decoration: underline;
+}
+.content .onelang .smallname{
+	margin: 12px 12px 28px 29px;
+	width: 130px;
+	height: 28px;
+	border: 1px solid var(--greystroke);
+	color: var(--grey2);
+	padding-left: 13px;
+}
+.content .onelang label{
+	display: inline-block;
+}
+.content a{
+	display: block;
+	width: 317px;
+	height: 32px;
+	background-color: var(--blue);
+	border: 0px;
+	color: var(--fon);
+	text-align: center;
+	margin: 30px 0px 100px 29px;
+	padding-top: 7px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,153 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/avenirnextcyr-regular.eot'); 
+	src: url('../fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/avenirnextcyr-regular.woff2') format('woff2'), 
+		url('../fonts/avenirnextcyr-regular.woff') format('woff'), 
+		url('../fonts/avenirnextcyr-regular.ttf') format('truetype'), 
+		url('../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); 
+}
+
+:root{
+	--black: rgba(0, 0, 0, 0.85);
+	--grey: rgba(0, 0, 0, 0.45);
+	--grey2: rgba(0, 0, 0, 0.25);
+	--supergrey: #F0F0F0;
+	--greytable: #FAFAFA;
+	--greystroke: #D9D9D9;
+	--greyextra: #F0F0F0;
+	--blue:  #1890FF;
+	--bluehover: #40A9FF;
+	--green:  #52C41A;
+	--red: #FF4D4F;
+	--redhover: #FF7875;
+	--redmistakestorke: #FFCCC7;
+	--redmistakebg: #FFF2F0;
+	--fon: #fff;
+	--fontfam: 'AvenirNextCyr', sans;
+	font-family: var(--fontfam);
+	font-weight: 400;
+	font-size: 14px;
+	font-variant: normal;
+	color: var(--black);
+}
+
+body{
+	width: 1200px;
+	margin: 0px auto;
+	background: var(--fon);
+}
+
+main{
+	margin-left: 87px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+a{
+	text-decoration: none;
+}
+a: visited{
+	text-decoration: none;
+}
+p{
+	margin: 0px;
+}
+
+::placeholder{
+	color: var(--grey2);
+	opacity: 1;
+}
+::-ms-input-placeholder{
+	color: var(--grey2);
+}
+:-ms-input-placeholder{
+	color: var(--grey2);
+}
+input{
+	outline: none;
+	font-size: 16px;
+}
+
+
+/***********************************************************************************************
+****************************     HEADER     ****************************************************
+***********************************************************************************************/
+
+header{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
+}
+header a{
+	height: 80%;
+}
+header a img{
+	margin-left: 39px;
+	height: 100%;
+}
+header .headermenu{
+	display: flex;
+	position: absolute;
+	right: 72px;
+	height: 60px;
+}
+header > div > div{
+	display: flex;
+	margin: 0px 12px;
+	padding: auto 0px;
+	align-items: center;
+	cursor: pointer;
+	border-top: 2px solid var(--fon);
+	transition: .3s;
+}
+header .headermenu div:hover{
+	color: var(--bluehover);
+	border-top: 2px solid var(--bluehover);
+}
+header > div .active{
+	color: var(--blue);
+	border-top: 2px solid var(--blue);
+}
+header > div > div > p{
+	margin: auto 0px;
+}
+
+/***********************************************************************************************
+****************************     FORM     ******************************************************
+***********************************************************************************************/
+
+form{
+	margin-left: 81px;
+}
+form h2{
+	margin: 54px 0px 40px 0px;
+}
+form input{
+	width: 455px;
+	height: 32px;
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid var(--greystroke);
+	color: var(--black);
+	margin: 12px 0px 24px 0px;
+	padding-left: 13px;
+	padding-top: 3px;
+}
+form a{
+	display: block;
+	width: 193px;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: var(--blue);
+	text-align: center;
+	padding-top: 6px;
+	color: var(--fon);
+	border-radius: 2px;
+	margin-top: 24px;
+}
